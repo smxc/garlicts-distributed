@@ -1,4 +1,4 @@
-package com.garlicts.plugin.distributed.rmi;
+package com.garlicts.framework.plugin.distributed.rmi;
 
 public interface RmiConstant {
 	 String ZK_CONNECTION_STRING = "127.0.0.1:2181";
