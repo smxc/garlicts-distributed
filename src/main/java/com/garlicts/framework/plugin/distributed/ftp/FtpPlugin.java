@@ -26,7 +26,7 @@ public class FtpPlugin implements Plugin {
 		ftpConstant.setPassword(ftpPassword);
 		
 		//将FtpTemplate注册到Bean容器
-		Class<?> ftpTemplateClass = ClassUtil.loadClass("com.garlicts.plugin.distributed.ftp.FtpTemplate");
+		Class<?> ftpTemplateClass = ClassUtil.loadClass("com.garlicts.framework.plugin.distributed.ftp.FtpTemplate");
 		try {
 			Constructor<?> constructor = ftpTemplateClass.getConstructor(FtpConstant.class);
 			FtpTemplate ftpTemplateInstance = (FtpTemplate) constructor.newInstance(ftpConstant);

@@ -103,6 +103,8 @@ public class FtpTemplate {
 				throw new Exception("FTP文件上传失败!");
 			}else{
 				rs.put("ret", "success");
+				// 文件上传的远程目录
+				rs.put("url", new StringBuffer(remoteFolder).append("/").append(newFilename).toString());
 			}
 
 		} catch (Exception e) {
